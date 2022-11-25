@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*html {
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50em;
+    background-color: orange;
+    border: 3px solid black;
+    animation-name: ombre;
+    margin-top: 3em;
+    border-radius: 50px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ombre {
+    from {
+        box-shadow: 10px 0 10px 5px black;
+    }
+    25% {
+        box-shadow: 0 10px  10px 5px black;
+    }
+    50%{
+        box-shadow: -10px 0 10px 5px black;
+    }
+    75% {
+        box-shadow: 0 -10px 10px 5px black;
+    }
+    to {
+        box-shadow: 10px 0 10px 5px black;
+    }
+}
+
+
+.case{
+    width: 15em;
+    height: 15em;
+    border: 2px solid orange;
+    color: orange;
+    text-align: center;
+    padding-top: 7em;
+    background-color: black;
+    border-radius: 20px;
+}
+.case:hover{
+    cursor: pointer;
+}
